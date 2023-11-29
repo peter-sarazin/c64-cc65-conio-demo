@@ -3,18 +3,20 @@ Just for fun:  creating PC-DOS style console i/o functions for the Commodore 64 
 
 My environment includes WSL (Windows Subsystem for Linux) with Ubuntu Linux on Windows with cc65 compiler, GNU make utility, VICE Commodore 64 Emulator, and Visual Studio Code for editor.
 
-Use GNU make to build:
+## Use GNU make to build:
 
-make CC65_TARGET=c64
+> $ make CC65_TARGET=c64
 
-This will create target executable test-c64 which you can drag and drop into the VICE Commodore 64 emulator.
+This will create target executable **test-c64** which you can drag and drop into the VICE Commodore 64 emulator.
 
-Functions:
+## Functions:
 
-void messagebox( unsigned char x, unsigned char y, char * message, unsigned char textcolor, unsigned char bgcolor );
+### messagebox( x, y, message, text_color, bg_color )
+
+### clearscreen( text_color, bg_color, border_color, fill_character )
 
 <img src="VICE-screenshot.png">
 
-KNOWN ISSUES:
+## Known Issues:
 
-- Having trouble with the conio textcolor and bgcolor functions.  They do not seem to like switching colors.  The last color selected wins.
+- Having trouble with the conio textcolor() and bgcolor() functions.  They do not seem to like switching colors.  The last color selected wins.
