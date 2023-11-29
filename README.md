@@ -17,4 +17,4 @@ void messagebox( unsigned char x, unsigned char y, char * message, unsigned char
 
 KNOWN ISSUES:
 
-- Having trouble with the conio textcolor and bgcolor functions.  Can't seem to call them from a method other than main, and they do not seem to like switching colors.  The last color selected wins.
+- Having trouble with the conio textcolor and bgcolor functions.  They do not seem to like switching colors.  The last color selected wins.
