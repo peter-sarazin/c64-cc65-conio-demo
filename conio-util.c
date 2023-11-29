@@ -28,8 +28,8 @@ void messagebox(unsigned char x, unsigned char y, char *message, unsigned char t
     cputsxy(startx + 2, starty + 2, message);
 
     // add a shadow
-    //    textcolor( COLOR_GRAY1 );
-    //    bgcolor( COLOR_GRAY3 );
+    textcolor(COLOR_GRAY1);
+    bgcolor(COLOR_GRAY3);
 
     // x axis
     for (x = startx + 1; x < startx + message_length + 4 + 1; x++)
