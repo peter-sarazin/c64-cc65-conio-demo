@@ -5,8 +5,8 @@
 void messagebox(unsigned char x, unsigned char y, char *message, unsigned char text_color, unsigned char bg_color)
 {
 
-    int startx, starty;
-    int message_length;
+    unsigned char startx, starty;
+    unsigned char message_length;
 
     startx = x;
     starty = y;
@@ -48,7 +48,7 @@ void messagebox(unsigned char x, unsigned char y, char *message, unsigned char t
 
 void clearscreen(unsigned char text_color, unsigned char bg_color, unsigned char border_color, char fill_character)
 {
-    int x, y;
+    unsigned char x, y;
 
     textcolor(text_color);
     bgcolor(bg_color);
