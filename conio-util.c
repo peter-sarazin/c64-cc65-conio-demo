@@ -45,3 +45,21 @@ void messagebox(unsigned char x, unsigned char y, char *message, unsigned char t
         cputcxy(startx + message_length + 4, y, cpeekc());
     }
 }
+
+void clearscreen(unsigned char text_color, unsigned char bg_color, unsigned char border_color, char fill_character)
+{
+    int x, y;
+
+    textcolor(text_color);
+    bgcolor(bg_color);
+    bordercolor(border_color);
+
+    // clear the screen and set a background...
+    for (x = 0; x < 40; x++)
+    {
+        for (y = 0; y < 25; y++)
+        {
+            cputcxy(x, y, fill_character);
+        }
+    }
+}
