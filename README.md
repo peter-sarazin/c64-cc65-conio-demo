@@ -19,4 +19,4 @@ This will create target executable **test-c64** which you can drag and drop into
 
 ## Known Issues:
 
-- Having trouble with the conio textcolor() and bgcolor() functions.  They do not seem to like switching colors.  The last color selected wins.
+- Having trouble with the conio textcolor() and bgcolor() functions using cc65 compiler with c64 target.  They do not seem to like switching colors.  The last color selected wins.
