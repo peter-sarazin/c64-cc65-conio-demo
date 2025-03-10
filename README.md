@@ -16,7 +16,3 @@ This will create target executable **test-c64** which you can drag and drop into
 ### clearscreen( text_color, bg_color, border_color, fill_character )
 
 <img src="VICE-screenshot.png">
-
-## Known Issues:
-
-- Having trouble with the conio textcolor() and bgcolor() functions using cc65 compiler with c64 target.  They do not seem to like switching colors.  The last color selected wins.
